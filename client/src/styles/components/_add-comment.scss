@@ -1,0 +1,21 @@
+.comment__form__button__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.comment__form__button {
+  background-color: $dark-blue-comp;
+  border: none;
+  border-radius: 3px;
+  color: $off-white;
+  font: inherit;
+  font-size: $font-size-large;
+  outline: none;
+  padding: $s-size $m-size;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $dark-blue;
+  }
+}

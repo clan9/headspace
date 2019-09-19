@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddPost component should render the component correctly 1`] = `
+<div
+  className="content-container"
+>
+  <h2
+    className="page__heading"
+  >
+    Add a Post
+  </h2>
+  <Connect(PostForm)
+    onSubmit={[Function]}
+  />
+</div>
+`;

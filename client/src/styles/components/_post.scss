@@ -1,0 +1,142 @@
+.post {
+  background-color: #fff;
+  border: 1px solid $blue;
+  border-radius: 3px;
+  margin-top: 12vmax;
+  padding-bottom: $s-size;
+
+  &__heading {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($dark-blue-comp, 0.9),
+      rgba($dark-blue-comp, 0.9)
+    );
+    color: #fff;
+    text-align: center;
+    margin-bottom: $m-size;
+    padding: $m-size;
+
+    &--title {
+      font-weight: 400;
+    }
+
+    &--subtitle {
+      font-size: $font-size-small;
+      font-weight: 400;
+    }
+  }
+
+  &__content {
+    padding: $m-size;
+    margin-bottom: $m-size;
+  }
+
+  &__stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $m-size;
+    font-size: $font-size-small;
+
+    &__info {
+      font-weight: 700;
+    }
+  }
+
+  &__error__container {
+    height: $xxl-size;
+    padding: $m-size;
+  }
+
+  &__error {
+    color: orangered;
+    font-size: $font-size-large;
+    font-style: italic;
+    text-align: center;
+    animation: fadeInMsg 6s ease-out backwards;
+  }
+
+  @media (max-width: 37.25em) {
+    &__stats {
+      flex-direction: column;
+    }
+  }
+}
+
+.like-post-button {
+  background-color: transparent;
+  border-radius: 3px;
+  color: $blue;
+  font: inherit;
+  font-size: $font-size-small;
+  outline: none;
+  border: none;
+  margin: $s-size;
+  padding: $xs-size $s-size;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $blue;
+    color: #fff;
+  }
+}
+
+.post__comments {
+  &__header {
+    margin: $l-size 0;
+    font-weight: 400;
+  }
+  &__item {
+    background-color: #fff;
+    border: 1px solid $blue;
+    border-radius: 3px;
+    margin: $m-size 0;
+    padding: $l-size $l-size 0 $l-size;
+
+    &__text {
+      padding-bottom: $m-size;
+
+      &--name {
+        font-weight: 700;
+      }
+    }
+
+    &__time {
+      font-size: $font-size-small;
+      font-weight: 700;
+      padding-bottom: $s-size;
+    }
+  }
+}
+
+.post__actions {
+  display: flex;
+  justify-content: space-evenly;
+
+  &__item {
+    text-decoration: none;
+    font: inherit;
+    background-color: $dark-blue-comp;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: $s-size;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $dark-blue;
+    }
+  }
+}
+
+@media (max-width: 31.25em) {
+  .post__actions {
+    flex-direction: column;
+    text-align: center;
+
+    &__item {
+      margin: $s-size;
+    }
+  }
+}

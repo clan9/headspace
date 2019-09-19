@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 55%;
+  }
+}
+// :root {
+//   font-size: calc(0.8vw + 0.2em);
+// }
+
+// @media (min-width: 50em) {
+//   :root {
+//     font-size: 0.65em;
+//   }
+// }
+
+// @media (max-width: 37.5em) {
+//   :root {
+//     font-size: 0.5em;
+//   }
+// }
+
+body {
+  background-image: linear-gradient(rgba($blue, 0.05), rgba($blue, 0.05));
+  box-sizing: border-box;
+  color: $dark-blue;
+  font-family: 'Montserrat', sans-serif;
+  font-size: $m-size;
+  line-height: 1.6;
+}
+
+button {
+  cursor: pointer;
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+.is-active {
+  color: orangered !important;
+}

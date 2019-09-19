@@ -1,0 +1,66 @@
+.post__form {
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 75vh;
+
+  .post__form__heading {
+    color: $blue;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: $l-size;
+  }
+
+  .post__form__error__container {
+    height: $xxl-size;
+    padding: $m-size;
+  }
+
+  .post__form__error {
+    color: orangered;
+    margin-bottom: $s-size;
+    font-size: $font-size-large;
+    font-style: italic;
+    animation: fadeInMsg 6s ease-out backwards;
+  }
+
+  .post__form__field {
+    color: inherit;
+    font: inherit;
+    font-size: $font-size-large;
+    margin-bottom: $l-size;
+    padding: $m-size;
+  }
+
+  .post__form__textarea {
+    color: inherit;
+    height: 50vh;
+    font: inherit;
+    font-size: $font-size-large;
+    margin-bottom: $l-size;
+    padding: $m-size;
+  }
+
+  .post__form__button__container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .post__form__button {
+    background-color: $dark-blue-comp;
+    border: none;
+    border-radius: 3px;
+    color: $off-white;
+    font: inherit;
+    font-size: $font-size-large;
+    outline: none;
+    padding: $s-size $m-size;
+    text-decoration: none;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $dark-blue;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.login {
+  background-image: linear-gradient(rgba($blue, 0.2), rgba($blue, 0.2)),
+    url('/img/bg4small.png');
+  background-size: cover;
+  background-position: right top;
+  height: 100vh;
+  padding-top: $xl-size;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__box {
+    background-color: fade-out(#fff, 0.45);
+    border-radius: 3px;
+    padding: $l-size $m-size;
+  }
+
+  &__title {
+    color: $dark-blue;
+    font-size: $heading-large;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: $m-size;
+  }
+
+  &__text {
+    color: $dark-blue;
+    font-size: $font-size-large;
+    margin-bottom: $m-size;
+    padding: $m-size;
+  }
+
+  &__buttons {
+    margin: $m-size;
+    text-decoration: none;
+    color: $dark-blue;
+    padding: $xs-size $m-size;
+    font-size: $font-size-xl;
+    font-weight: 400;
+    transition: all 0.4s;
+    border-radius: 3px;
+
+    &:hover {
+      background-color: $blue;
+      color: $off-white;
+    }
+  }
+
+  .cta {
+    color: orangered;
+
+    &:hover {
+      background-color: orangered;
+      color: $off-white;
+    }
+  }
+
+  @media (max-width: 50em) {
+    &__buttons {
+      padding: $xs-size $s-size;
+      font-size: $font-size-large;
+    }
+  }
+
+  @media (max-width: 37.5em) {
+    &__buttons {
+      padding: $xs-size;
+      font-size: $font-size-large;
+    }
+  }
+
+  @media (max-width: 31.25em) {
+    &__box {
+      padding: $m-size $s-size;
+    }
+    &__buttons {
+      font-size: $font-size-med;
+    }
+  }
+}

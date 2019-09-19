@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddComment component tests should render AddComment component correctly 1`] = `
+<div
+  className="content-container"
+>
+  <h2
+    className="page__heading"
+  >
+    Add a Comment
+  </h2>
+  <form
+    className="form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="form__error__container"
+    />
+    <textarea
+      className="form__textarea"
+      onChange={[Function]}
+      placeholder="What did you think?"
+      type="text"
+      value=""
+    />
+    <div
+      className="comment__form__button__container"
+    >
+      <Link
+        className="comment__form__button"
+        to="/dashboard"
+      >
+        Home
+      </Link>
+      <button
+        className="comment__form__button"
+        type="submit"
+      >
+        Save Comment
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`AddComment component tests should render AddComment component correctly when there is an error message to display 1`] = `
+<div
+  className="content-container"
+>
+  <h2
+    className="page__heading"
+  >
+    Add a Comment
+  </h2>
+  <form
+    className="form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="form__error__container"
+    >
+      <p
+        className="form__error"
+      >
+        You cannot add an empty comment
+      </p>
+    </div>
+    <textarea
+      className="form__textarea"
+      onChange={[Function]}
+      placeholder="What did you think?"
+      type="text"
+      value=""
+    />
+    <div
+      className="comment__form__button__container"
+    >
+      <Link
+        className="comment__form__button"
+        to="/dashboard"
+      >
+        Home
+      </Link>
+      <button
+        className="comment__form__button"
+        type="submit"
+      >
+        Save Comment
+      </button>
+    </div>
+  </form>
+</div>
+`;

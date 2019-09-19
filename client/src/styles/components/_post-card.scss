@@ -1,0 +1,57 @@
+.post-card__link {
+  color: $dark-blue;
+  font: inherit;
+  text-decoration: none;
+}
+
+.post-card {
+  background-color: #fff;
+  border: 1px solid $blue;
+  margin-bottom: $s-size;
+
+  &__title {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($dark-blue-comp, 0.9),
+      rgba($dark-blue-comp, 0.9)
+    );
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: $s-size;
+    padding: $s-size;
+    text-align: center;
+  }
+
+  &__summary {
+    margin-bottom: $s-size;
+    padding: $xs-size $s-size;
+
+    &--more {
+      font-size: $font-size-small;
+      color: orangered;
+    }
+  }
+
+  &__stats {
+    font-size: $font-size-small;
+    display: flex;
+    justify-content: space-between;
+    padding: $xs-size $s-size;
+
+    &__right {
+      display: flex;
+
+      &--likes {
+        margin-left: $s-size;
+        margin-right: $m-size;
+      }
+    }
+  }
+
+  @media (max-width: 31.25em) {
+    &__stats {
+      flex-direction: column;
+      padding: $s-size;
+    }
+  }
+}

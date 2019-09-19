@@ -1,0 +1,42 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(
+    to right bottom,
+    $dark-blue-comp,
+    $dark-blue
+  );
+  padding: $s-size;
+  z-index: 1;
+
+  &__link {
+    border: none;
+    -moz-outline-style: none;
+    outline-style: none;
+    color: $off-white;
+    font-size: $font-size-large;
+    text-decoration: none;
+    padding: $m-size;
+
+    &--logo {
+      font-size: $font-size-xl;
+      letter-spacing: 1px;
+    }
+  }
+
+  @media (max-width: 37.5em) {
+    &__link {
+      padding: $s-size;
+      font-size: $font-size-med;
+
+      &--logo {
+        font-size: $font-size-xl;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.profile {
+  margin-top: $m-size;
+
+  .profile__text {
+    font-size: $font-size-large;
+    padding: $s-size;
+  }
+
+  .profile__commented {
+    margin: $m-size 0;
+  }
+
+  .profile__liked {
+    margin: $m-size 0;
+  }
+
+  .profile__stat {
+    color: $blue;
+  }
+
+  .profile__actions {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: $l-size;
+
+    &__item {
+      text-decoration: none;
+      font: inherit;
+      background-color: $dark-blue-comp;
+      color: #fff;
+      outline: none;
+      border: none;
+      border-radius: 3px;
+      padding: $s-size;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: $dark-blue;
+      }
+    }
+  }
+}

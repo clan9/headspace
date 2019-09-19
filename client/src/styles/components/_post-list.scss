@@ -1,0 +1,16 @@
+.post-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__message {
+    font-size: $font-size-large;
+    font-style: italic;
+    padding: $m-size;
+  }
+
+  &__items {
+    width: 100%;
+  }
+}
