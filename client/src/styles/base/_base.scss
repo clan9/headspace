@@ -51,3 +51,15 @@ button {
 .is-active {
   color: orangered !important;
 }
+
+.page__heading {
+  font-weight: 400;
+  padding-top: $l-size;
+  text-align: center;
+}
+
+@media (max-width: 25em) {
+  .page__heading {
+    padding-top: $xl-size;
+  }
+}

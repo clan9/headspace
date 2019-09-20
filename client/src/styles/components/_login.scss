@@ -50,6 +50,7 @@
 
   .cta {
     color: orangered;
+    font-weight: 600;
 
     &:hover {
       background-color: orangered;
@@ -76,7 +77,15 @@
       padding: $m-size $s-size;
     }
     &__buttons {
-      font-size: $font-size-med;
+      // font-size: $font-size-med;
+      // display: block;
+    }
+  }
+
+  @media (max-width: 24em) {
+    &__buttons {
+      // font-size: $font-size-med;
+      display: block;
     }
   }
 }

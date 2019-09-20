@@ -17,23 +17,30 @@
       font: inherit;
       width: 40%;
       margin-top: $s-size;
-      padding: $s-size;
+      padding: $xs-size;
     }
 
     &--add-post {
-      background-color: $dark-blue-comp;
-      border: 1px solid $blue;
+      // background-color: $dark-blue-comp;
+      background-color: orangered;
+      border: 1px solid orangered;
       border-radius: 3px;
       color: #fff;
       font: inherit;
       margin-top: $s-size;
-      padding: $s-size;
+      padding: $xs-size $s-size;
       text-align: center;
       text-decoration: none;
       transition: all 0.3s;
+      width: 5em;
+
+      & span {
+        display: block;
+      }
 
       &:hover {
-        background-color: $dark-blue;
+        background-color: $dark-blue-comp;
+        border: 1px solid $dark-blue-comp;
         color: #fff;
       }
     }

@@ -19,6 +19,10 @@ export class AddComment extends Component {
     }, 6000);
   };
 
+  componentWillUnmount() {
+    this.setState(() => ({ error: '' }))
+  }
+
   onSubmit = e => {
     e.preventDefault();
 

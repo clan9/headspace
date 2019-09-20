@@ -40,3 +40,17 @@
     }
   }
 }
+
+@media (max-width: 25em) {
+  .navbar {
+    flex-direction: column;
+
+    &__left {
+      margin-bottom: 1em;
+    }
+
+    &__right a {
+      margin: 0 1em;
+    }
+  }
+}

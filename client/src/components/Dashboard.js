@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PostList from 'components/PostList';
 import PostFilter from 'components/PostFilter';
 import { connect } from 'react-redux';
@@ -9,6 +9,10 @@ export const Dashboard = ({ name = '' }) => {
       return name.charAt(0).toUpperCase() + name.slice(1);
     }
   };
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
 
   return (
     <div className="content-container">

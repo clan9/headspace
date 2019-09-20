@@ -15,6 +15,7 @@
   .form__error__container {
     height: $xxl-size;
     padding: $m-size;
+    margin-bottom: $s-size;
   }
 
   .form__error {
@@ -61,4 +62,6 @@
       background-color: $dark-blue;
     }
   }
+
+
 }

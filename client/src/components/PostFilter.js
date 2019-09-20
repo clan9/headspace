@@ -48,7 +48,7 @@ export class PostFilter extends Component {
           </select>
           {this.props.isAuthenticated && (
             <Link to="/create" className="post__filter__filters--add-post">
-              Add Post
+                <span>Add</span><span>Post</span>
             </Link>
           )}
         </div>
