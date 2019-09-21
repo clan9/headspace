@@ -29,6 +29,7 @@
   &__content {
     padding: $m-size;
     margin-bottom: $m-size;
+    white-space: pre-wrap;
   }
 
   &__stats {
