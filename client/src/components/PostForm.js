@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
-import moment from 'moment';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { Link } from "react-router-dom";
+import moment from "moment";
 
 export class PostForm extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      title: props.post ? props.post.title : '',
-      content: props.post ? props.post.content : '',
+      title: props.post ? props.post.title : "",
+      content: props.post ? props.post.content : "",
       createdAt: props.post ? moment(props.post.createdAt) : moment(),
       editedAt: props.post ? moment(props.post.editedAt) : moment(),
-      error: ''
+      error: ""
     };
   }
 
@@ -30,7 +30,7 @@ export class PostForm extends Component {
 
   resetError = () => {
     setTimeout(() => {
-      this.setState(() => ({ error: '' }));
+      this.setState(() => ({ error: "" }));
     }, 6000);
   };
 
@@ -38,11 +38,11 @@ export class PostForm extends Component {
     e.preventDefault();
     if (!this.state.title || !this.state.content) {
       this.setState({
-        error: 'Please provide a title and the content for your post'
+        error: "Please provide a title and the content for your post"
       });
       this.resetError();
     } else {
-      this.setState({ error: '' });
+      this.setState({ error: "" });
       this.props.onSubmit({
         title: this.state.title,
         content: this.state.content,
@@ -74,6 +74,7 @@ export class PostForm extends Component {
           className="post__form__textarea"
           value={this.state.content}
           onChange={this.onContentChange}
+          wrap="soft"
         />
         <div className="post__form__button__container">
           <Link className="post__form__button" to="/dashboard">
