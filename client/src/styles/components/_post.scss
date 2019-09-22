@@ -132,12 +132,16 @@
 }
 
 @media (max-width: 31.25em) {
-  .post__actions {
-    flex-direction: column;
-    text-align: center;
+  .post {
+    margin-top: 18vmax;
 
-    &__item {
-      margin: $s-size;
+    &__actions {
+      flex-direction: column;
+      text-align: center;
+
+      &__item {
+        margin: $s-size;
+      }
     }
   }
 }
